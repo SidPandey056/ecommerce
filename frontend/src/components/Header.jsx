@@ -5,7 +5,7 @@ import { useContext, useState } from "react";
 import Navbar from "./Navbar";
 
 // Images
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo_fashionFusion.png";
 // import logout from "../assets/logout.svg";
 import user from "../assets/user.svg";
 

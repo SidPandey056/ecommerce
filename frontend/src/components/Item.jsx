@@ -13,6 +13,7 @@ const Item = ({ id, name, image, new_price, old_price }) => {
           <FaSearch className="hover:rotate-90 scale-125 transition-all duration-200" />
         </Link>
         <img
+          onClick={window.scrollTo(0, 0)}
           src={image}
           alt="productImage"
           className="w-full block object-cover group-hover:scale-110 transition-all duration-1000"
@@ -22,7 +23,9 @@ const Item = ({ id, name, image, new_price, old_price }) => {
         <h4 className="my-[6px] medium-16 line-clamp-2 text-gray-30">{name}</h4>
         <div className="flex gap-4">
           <div className="bold-16">{new_price.toFixed(2)}</div>
-          <div className="text-secondary bold-16 line-through">{old_price}</div>
+          <div className="text-secondary bold-16 line-through">
+            {old_price.toFixed(2)}
+          </div>
         </div>
       </div>
     </div>
